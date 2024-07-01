@@ -1,4 +1,3 @@
-import java.sql.Array;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,10 +18,11 @@ public class Main {
             } else {
                 counter = 0;
             }
+//            Check is done at the end of iteration to not need to start another loop before exiting
             if (counter>=3) {
                 return true;
             }
         }
-        return counter >= 3;
+        return false;
     }
 }
