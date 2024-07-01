@@ -13,13 +13,14 @@ public class Main {
         int counter = 0;
 
         for(int number : arr) {
-            if (counter>=3) {
-                return true;
-            }
+
             if(number%2!=0) {
                 counter++;
             } else {
                 counter = 0;
+            }
+            if (counter>=3) {
+                return true;
             }
         }
         return counter >= 3;
